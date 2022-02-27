@@ -10,7 +10,6 @@ console.log(`true: ${true}`);
 console.log(`Not true: ${!true}`);
 console.log(!(10 == "10"))
 
-
 // && And
 console.log(10 == "10" && 10 > 5 && 10 >= 10); // in this operator must be true all of them 
 
