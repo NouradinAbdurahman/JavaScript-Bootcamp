@@ -1,5 +1,6 @@
 /*
-    String Methods
+    String Methods Part 2
+    
     - indexOf(value [you Must write the value you are looking at ] , Start [this is optinal it will start from zero automatically] 0 )
     - lastIndexOf(value [you Must write the value you are looking at ] , Start [this is optinal it will start from zero automatically, but opisite waye])
     - slice(value [you Must write the value you are looking at ] , End [this is optinal], but Not include the end)
