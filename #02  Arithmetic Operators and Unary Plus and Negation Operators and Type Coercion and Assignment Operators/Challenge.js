@@ -1,5 +1,4 @@
 // Operators Challenges
-
 console.log("Operators Challenges");
 let a = "-100";
 let b = "20";
