@@ -23,7 +23,6 @@ console.log(a.substr(0,11)); // Elzero School
 console.log(a.charAt(0).toLowerCase() + a.substr(1,a.length - 2).toUpperCase() + a.charAt(a.length-1).toLowerCase()); // eLZERO WEB SCHOOl
 
 
-
 console.log("################################################################################################################");
 console.log(" ");
 console.log(" ");
