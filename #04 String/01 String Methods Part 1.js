@@ -1,5 +1,6 @@
 /*
-    String Method
+    String Methods Part 1
+    
     - Access with index[]
     - Access with chartAt() // character at position
     - length
