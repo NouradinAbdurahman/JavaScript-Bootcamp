@@ -1,8 +1,8 @@
 /*
     String Methods Part 2
-    
+
     - indexOf(value [you Must write the value you are looking at ] , Start [this is optinal it will start from zero automatically] 0 )
-    - lastIndexOf(value [you Must write the value you are looking at ] , Start [this is optinal it will start from zero automatically, but opisite waye])
+    - lastIndexOf(value [you Must write the value you are looking at ] , Start [this is optinal it will start from zero automatically, but oppisite waye])
     - slice(value [you Must write the value you are looking at ] , End [this is optinal], but Not include the end)
     - repeat() ==> you can repeat things how many times do you need to repeat it.
     - split(separoter [Optinal], Limit [Optinal]) ==> in this method is gonna seperate everything and put it in to an array 
