@@ -19,6 +19,8 @@ let solution1 = a < 10 ? 10 : a >= 10 && a <= 40 ? "10 TO 40" : a > 40 ? "Larger
 console.log(`Solution 1: ${solution1}`);
 
 let st = "Elzero Web School";
+
+
 if((st.length * 2).toString() === "34") {
     console.log("Solution 2: Good");
 }
