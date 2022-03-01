@@ -15,7 +15,7 @@ if (job === "Manager") {
   salary = 4000;
 }
 
-// Convert previouse code to If statement
+// Convert previouse code in to If statement
 
 switch (job) {
     case "Manager":
@@ -74,7 +74,7 @@ switch (holidays) {
 }
 
 
-// Convert previouse code to Switch Statement
+// Convert previouse code in to Switch Statement
 if (holidays === 0) {
     money = 5000;
     console.log(`My Money is ${money}`);
