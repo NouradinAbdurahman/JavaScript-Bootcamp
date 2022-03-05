@@ -37,3 +37,11 @@ console.log(`After Changing the array element: ${myFriends}`);
 // Check for Array Array.isArray(arr);
 
 console.log(`Check for Array Array.isArray(myFriends); ${Array.isArray(myFriends)}`);
+
+
+
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < numbers.length; i++) {
+  console.log(i , numbers[i]);
+}
