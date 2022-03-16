@@ -24,11 +24,11 @@ console.log(arrowFunction2(10,10));
 
 
 // Arrow Function with Multiple lines
-let arrowFunction3 = (fName, Lname) => {
+let arrowFunction3 = (Fname, Lname) => {
     let message = `Hello`;
     function concatMesg() {
         function getFullName() {
-            return `${fName} ${Lname}`
+            return `${Fname} ${Lname}`
         }
         return `${message} ${getFullName()}`
     }
