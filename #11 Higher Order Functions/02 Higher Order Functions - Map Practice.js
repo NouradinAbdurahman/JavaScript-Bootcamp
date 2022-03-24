@@ -34,4 +34,4 @@ console.log("#".repeat(20));
 
 let ignoreNumbers = "Noura12di3n";
 let ignoreNumbersResult = ignoreNumbers.split("").map((e) => isNaN(parseInt(e)) ? e: "" ).join("");
-console.log(ignoreNumbersResult)
+console.log(ignoreNumbersResult);
