@@ -2,6 +2,7 @@
     DOM [Challenge]
 */
 
+// Header Section
 let header = document.createElement("header");
 let logoDiv = document.createElement("div");
 let logoH1 = document.createElement("h1")
@@ -72,10 +73,14 @@ document.body.appendChild(header);
 
 
 // Styling the elements
+document.body.style.cssText = "margin: 0px; background-color: rgb(236,236,236)"
 let headerStyle = document.querySelector(".header");
 headerStyle.style.cssText =
-"display: flex; flex-direction: row; justify-content: space-between; color: rgb(0, 135, 112); font-family: Arial, Helvetica, sans-serif; background-color: white";
+"display: flex; flex-direction: row; justify-content: space-between; color: rgb(0, 135, 112); font-family: Arial, Helvetica, sans-serif; background-color: white; align-items: center";
 
+let logoStyle = document.querySelector(".logo");
+
+logoStyle.style.cssText = "margin-left: 20px"
 
 let ulStyle = document.querySelector("ul");
 ul.style.cssText = "list-style-type: none; display: flex;";
@@ -91,4 +96,93 @@ let aStyle3 = document.querySelector(".link3");
 aStyle3.style.cssText = "display: inline-block; padding: 10px; text-decoration: none;color: grey";
 
 let aStyle4 = document.querySelector(".link4");
-aStyle4.style.cssText = "display: inline-block; padding: 10px; text-decoration: none;color: grey";
+aStyle4.style.cssText = "display: inline-block; padding: 10px; text-decoration: none;color: grey; margin-right: 20px";
+
+//////////////////////////////////////////////////////////////////////////////////
+
+// Products Section
+let cardSection = document.createElement("section");
+let cardSectionContent = document.createElement("div");
+let products = document.createElement("div");
+
+for(let i = 1; i <= 15; i++) {
+    let span = document.createElement(`span`);
+    let h2 = document.createElement(`h2`);
+    let h2Numbers = document.createTextNode(`${i}`);
+    let spanText = document.createTextNode(`Product`);
+    products.appendChild(span);
+    span.appendChild(h2);
+    h2.appendChild(h2Numbers)
+    span.appendChild(spanText);
+
+    span.className = "product";
+    h2.className = "number";
+    spanText.className = "productName";
+}
+
+// Adding Class Names
+cardSection.className = "cardSection";
+cardSectionContent.className = "cardSectionContent";
+products.className = "products";
+
+// Adding the elements together
+cardSection.appendChild(cardSectionContent);
+cardSectionContent.appendChild(products)
+
+console.log(cardSection)
+document.body.appendChild(cardSection);
+
+// Styling the elements
+let productstyle =document.querySelector(".products").style.cssText = 
+"text-align: center"
+for(let j = 0; j < 15 ;j++){
+    let myProduct = document.getElementsByClassName("product");
+    // console.log(myProduct);
+    myProduct[j].style.padding= "20px";
+    myProduct[j].style.margin = "5px";
+    myProduct[j].style.width= "calc((100% - 33px) / 3)";
+    myProduct[j].style.fontFamily = "Arial, Helvetica, sans-serif";
+    myProduct[j].style.backgroundColor= "rgb(255, 255, 255)";
+    myProduct[j].style.textAlign="center";
+    myProduct[j].style.color= "rgb(136, 136, 136)";
+    myProduct[j].style.boxSizing= "border-box";
+    myProduct[j].style.border= "1px solid rgb(221, 221, 221)";
+    myProduct[j].style.borderRadius= "6px";
+    myProduct[j].style.display = "inline-block;";
+
+    //style span
+    let mySpan = document.getElementsByTagName("span");
+    // console.log(mySpan);
+    mySpan[j].style.fontFamily = "Arial, Helvetica, sans-serif";
+    mySpan[j].style.fontSize= "20px";
+    mySpan[j].style.display= "block";
+    mySpan[j].style.fontWeight="normal";
+    mySpan[j].style.color= "black";
+    mySpan[j].style.marginBottom= "5px";
+    mySpan[j].style.marginTop= "5px";
+    mySpan[j].style.display = "inline-block";
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+// Footer Section
+let footer = document.createElement("footer");
+let footerContent = document.createElement("h2");
+let footerText = document.createTextNode("CopyRight 2022");
+
+// Adding Class Names
+footer.className = "footerSection";
+footerContent.className = "footerContent";
+
+
+// Adding the elements together
+footer.appendChild(footerContent);
+footerContent.appendChild(footerText);
+
+console.log(footer);
+document.body.appendChild(footer);
+
+// Styling the elements
+let FooterStyle = document.querySelector(".footerSection").style.cssText = 
+"background-color: rgb(0, 135, 112);; padding: 10px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: white";
