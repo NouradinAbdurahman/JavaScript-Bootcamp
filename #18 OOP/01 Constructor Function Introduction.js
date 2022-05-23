@@ -1,25 +1,43 @@
 /*
-    Constructor Function
+  Constructor Function
 */
 
 function User(id, username, salary) {
-    this.id = id;
-    this.username = username;
-    this.salary = salary +1000;
-};
-let userOne = new User("100", "Nouraddin", 10000);
-let userTwo = new User("101", "Mohamed", 9000);
-let userThree = new User("102", "Ismail", 11000);
+  this.i = id;
+  this.u = username;
+  this.s = salary + 1000;
+}
 
-console.log(userOne.id);
-console.log(userOne.username);
-console.log(userOne.salary);
+let userOne = new User(100, "Elzero", 5000);
+let userTwo = new User(101, "Hassan", 6000);
+let userThree = new User(102, "Sayed", 7000);
 
-console.log(userTwo.id);
-console.log(userTwo.username);
-console.log(userTwo .salary);
+console.log(userOne.i);
+console.log(userOne.u);
+console.log(userOne.s);
 
+console.log(userTwo.i);
+console.log(userTwo.u);
+console.log(userTwo.s);
 
-console.log(userThree.id);
-console.log(userThree.username);
-console.log(userThree.salary);
+console.log(userThree.i);
+console.log(userThree.u);
+console.log(userThree.s);
+
+// const userOne = {
+//   id: 100,
+//   username: "Elzero",
+//   salary: 5000,
+// };
+
+// const userTwo = {
+//   id: 101,
+//   username: "Hassan",
+//   salary: 6000,
+// };
+
+// const userThree = {
+//   id: 102,
+//   username: "Sayed",
+//   salary: 7000,
+// };
