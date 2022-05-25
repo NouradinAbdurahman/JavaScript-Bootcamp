@@ -32,7 +32,7 @@ console.log(userOne.writeMsg); // Native Code
 
 
 class UserTwo {
-    constructor (id = 0, fName, lName, age, country, adresses, jobTitle, salary) {
+    constructor (id, fName, lName, age, country, adresses, jobTitle, salary){
         this.id = id;
         this.fName = fName || "Unknown";
         this.lName = lName || "Unknown";
@@ -40,7 +40,7 @@ class UserTwo {
         this.country = country || "Unknown";
         this.adresses = adresses;
         this.jobTitle = jobTitle;
-        this.salary = salary < 500 ? salary + 500: salary;
+        this.salary = salary < 5000 ? salary + 1000: salary;
         this.msg = () => {
             return `Hello ${this.fName} ${this.lName} your age is ${this.age}`
         };
@@ -54,6 +54,7 @@ let user1 = new UserTwo ("101", "Nouraddin", "Aden", 21, "Somlia", {
     qatar: "Qatar",
     turkey: "Ankara",
 },"Software Developer" , 10000);
+
 console.log(user1.id);
 console.log(user1.fName);
 console.log(user1.lName);
@@ -61,4 +62,6 @@ console.log(user1.age);
 console.log(user1.country);
 console.log(user1.jobTitle);
 console.log(user1.adresses);
+console.log(user1.salary);
 console.log(user1.msg());
+console.log(user1.writeMsg());
